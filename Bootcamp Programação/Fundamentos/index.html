@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Título da página</title>
+    <link rel="stylesheet" href="index.css" />
+    <script>
+      // alert('Hello World!');
+      console.log('Olá, ça galera!');
+    </script>
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <img width="200" src="C:\Users\scgomes\Desktop\Links2.jpg" />
+    <h1 class="text-header">Heading 1</h1>
+    <h2 id="texto2">Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <script>
+      setTimeout(function () {
+        console.log('Passou 1 segundo');
+      }, 1000);
+      setTimeout(function () {
+        console.log('Passou 2 segundos');
+        // document.write('Texto qualquer');
+      }, 2000);
+      document.write('Texto qualquer');
+    </script>
+
+    <p class="borda paragrafo">Esse é um parágrafo</p>
+    <br /><br /><br />
+    <p class="paragrafo" id="paragrafo2">Esse é outro parágrafo</p>
+    <a href="https://www.igti.com.br/">Ir para o site IGTI</a>
+    <br />
+    <input type="text" /><br />
+    <input type="number" /><br />
+    <input type="checkbox" id="carro1" />
+    <label for="carro1">Corsa</label>
+    <input type="checkbox" id="carro2" />
+    <label for="carro2">Gol</label>
+    <input type="checkbox" id="carro3" />
+    <label for="carro2">Ford Ka</label><br />
+    <input type="radio" id="Masculino" value="Masculino" name="sexo" />
+    <label for="Masculino">Masculino</label>
+    <input type="radio" id="Feminino" value="Feminino" name="sexo" />
+    <label for="Feminino">Feminino</label>
+    <input type="radio" id="Indefinido" value="Indefinido" name="sexo" />
+    <label for="Indefinido">Indefinido</label><br />
+    <select name="" id="">
+      <option value="Escolha uma opção" selected>Escolha uma opção</option>
+      <option value="Uno">Uno</option>
+      <option value="Gol">Gol</option>
+      <option value="Palio">Palio</option>
+      <option value="Sandero">Sandero</option> </select
+    ><br />
+    <select multiple name="" id="">
+      <option value="Uno">Uno</option>
+      <option value="Gol">Gol</option>
+      <option value="Palio">Palio</option>
+      <option value="Sandero">Sandero</option> </select
+    ><br />
+    <textarea name="" id="" cols="20" rows="5">Texto inicial</textarea><br />
+
+    <button type="button" onclick="clickButton()">Clique aqui</button>
+    <button type="button" onclick="clickButton2()">Clique aqui 2</button>
+
+    <br />
+    <img id="lampada" src="lampada-off.gif" />
+    <br />
+
+    <button type="button" onclick="lightOn()">Ligar lâmpada</button>
+    <button type="button" onclick="lightOff()">Desligar lâmpada</button>
+    <br />
+    <br />
+    <button type="button" onclick="adicionarElementos()">
+      Adicionar Elemento
+    </button>
+    <button type="button" onclick="removerElementos()">Remover Elemento</button>
+
+    <div id="div-elementos"></div>
+
+    <script>
+      console.log('Hello World no body');
+      document.write('Texto qualquer');
+    </script>
+  </body>
+</html>

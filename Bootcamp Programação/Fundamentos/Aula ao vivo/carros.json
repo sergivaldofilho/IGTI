@@ -1,0 +1,24 @@
+{
+    "carros": [
+        {
+            "nome": "F50",
+            "marca": "Ferrari",
+            "ano": "2010"
+        },
+        {
+            "nome": "F51",
+            "marca": "Ferrari",
+            "ano": "2012"
+        },
+        {
+            "nome": "Fusca",
+            "marca": "VW",
+            "ano": "2014"
+        },
+        {
+            "nome": "Uno",
+            "marca": "Fiat",
+            "ano": "2015"
+        }
+    ]
+}
