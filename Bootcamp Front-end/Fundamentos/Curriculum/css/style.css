@@ -1,0 +1,47 @@
+body {
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.dados-pessoais {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.dados-pessoais img {
+  width: 15%;
+  height: 30%;
+  border-radius: 50%;
+}
+
+.dados-pessoais p {
+  font-weight: bold;
+}
+
+/* #dados {
+  margin-left: 2px;
+  list-style-type: disc;
+} */
+
+table,
+tr,
+td,
+th {
+  padding: 5px;
+  border: 1px solid gray;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+th {
+  background-color: #ddd;
+  font-weight: bold;
+}
