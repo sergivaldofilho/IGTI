@@ -1,0 +1,3 @@
+Utiliza a tag <form>
+
+Outros tags utilizadas são o <textarea> e o <imput>
