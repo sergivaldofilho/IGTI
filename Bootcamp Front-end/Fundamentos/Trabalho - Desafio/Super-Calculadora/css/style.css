@@ -1,0 +1,22 @@
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: yellowgreen;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6rem;
+  /* font-weight: bold; */
+  color: yellowgreen;
+  text-align: center;
+}
+
+.nav-wrapper {
+  background-color: yellowgreen;
+  width: 100%;
+}
+
+.nav-wrapper a {
+  margin-left: 10px;
+}
