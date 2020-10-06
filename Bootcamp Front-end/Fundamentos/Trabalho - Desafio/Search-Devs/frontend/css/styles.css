@@ -1,3 +1,12 @@
+body {
+  background-color: rgb(155, 180, 253);
+}
+
+h4,
+h5 {
+  color: darkblue;
+  font-weight: bold;
+}
 .input-field {
   margin-bottom: 0%;
 }
@@ -44,10 +53,11 @@ img {
   align-items: center;
   justify-content: flex-start;
 
-  border: 1px thistle solid;
+  border: 1px royalblue solid;
   border-radius: 4px;
   padding: 2px;
   margin: 4px;
+  color: darkblue;
 }
 
 input .col {
@@ -63,4 +73,27 @@ input .col {
 
 #checkboxes span {
   margin-right: 1rem;
+}
+
+#radioButtons span {
+  color: royalblue;
+  font-weight: bold;
+}
+
+.nav-wrapper {
+  background-color: royalblue;
+}
+
+.nav-wrapper a {
+  margin-left: 15px;
+}
+
+.input-field > input {
+  border-bottom: 1px solid royalblue !important;
+  -webkit-box-shadow: 0 1px 0 0 royalblue !important;
+  box-shadow: 0 1px 0 0 royalblue !important;
+}
+
+.input-field > label {
+  color: royalblue !important;
 }

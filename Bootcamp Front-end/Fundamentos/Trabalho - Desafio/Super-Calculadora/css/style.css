@@ -1,22 +1,37 @@
+body {
+  background-color: rgb(155, 180, 253);
+}
+
 h1 {
   font-size: 2rem;
-  font-weight: bold;
-  color: yellowgreen;
+  /* font-weight: bold; */
+  color: darkblue;
   text-align: center;
 }
 
 h2 {
   font-size: 1.6rem;
   /* font-weight: bold; */
-  color: yellowgreen;
+  color: darkblue;
   text-align: center;
 }
 
 .nav-wrapper {
-  background-color: yellowgreen;
+  background-color: royalblue;
   width: 100%;
+  font-size: 25px;
 }
 
 .nav-wrapper a {
   margin-left: 10px;
+}
+
+.input-field > input {
+  border-bottom: 1px solid royalblue !important;
+  -webkit-box-shadow: 0 1px 0 0 royalblue !important;
+  box-shadow: 0 1px 0 0 royalblue !important;
+}
+
+.input-field > label {
+  color: royalblue !important;
 }

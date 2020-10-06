@@ -37,7 +37,7 @@ var globalCalculations = [
 
   {
     id: 5,
-    description: 'Divisão (a-b)',
+    description: 'Divisão (a/b)',
     calculationFunction: function division(a, b) {
       return getDivisionFrom(a, b);
       // if (b === 0) {
@@ -50,7 +50,7 @@ var globalCalculations = [
 
   {
     id: 6,
-    description: 'Divisão (b-a)',
+    description: 'Divisão (b/a)',
     calculationFunction: function division(b, a) {
       return getDivisionFrom(b, a);
       // if (a === 0) {
@@ -63,7 +63,7 @@ var globalCalculations = [
 
   {
     id: 7,
-    description: 'Quadrado de a (a2)',
+    description: 'Quadrado de a (a²)',
     calculationFunction: function square(a) {
       return formatNumber(a ** 2);
     },
@@ -72,7 +72,7 @@ var globalCalculations = [
 
   {
     id: 8,
-    description: 'Quadrado de b (b2)',
+    description: 'Quadrado de b (b²)',
     calculationFunction: function square(b) {
       return formatNumber(b ** 2);
     },
@@ -186,6 +186,7 @@ function getMaterializeInput(id, value) {
   input.type = 'text';
   input.id = id;
   input.value = value;
+  input.classList.add('valid');
 
   return input;
 }
@@ -194,7 +195,7 @@ function getMaterializeLabel(id, description) {
   var label = document.createElement('label');
   label.for = id;
   label.textContent = description;
-  label.classList.add('active');
+  label.classList.add('active', 'myblue');
 
   return label;
 }
