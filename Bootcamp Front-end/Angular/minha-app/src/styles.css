@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: Arial;
+}
+
+.box {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-color: aqua;
+  border: 2px solid gray;
+  margin-right: 1rem;
+}
+
+/* * {
+  font-family: Arial;
+}
+
+table {
+  border-spacing: 0;
+}
+
+td {
+  border-top: 1px solid black;
+  padding: 4px;
+}
+
+.rating {
+  color: rgb(224, 224, 6);
+  cursor: pointer;
+} */

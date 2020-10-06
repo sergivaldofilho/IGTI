@@ -1,0 +1,80 @@
+<div class="navbar">
+  <nav class="nav-wrapper">
+    <a href="#" class="brand-logo">Dev. Front-end - Angular</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">JavaScript</a></li>
+    </ul>
+    <div class="input-field right">
+      <input id="search" type="search" required />
+      <label class="label-icon" for="search">
+        <i class="material-icons">search</i>
+      </label>
+      <i class="material-icons">close</i>
+    </div>
+  </nav>
+</div>
+<div class="container">
+  <header class="center">
+    <h4>Jogo da Velha Caipira</h4>
+  </header>
+  <label for="">
+    <h5 *ngIf="!winner">Jogador da vez: {{ initialPlayer() }}</h5>
+    <h6>PLACAR DO GAME</h6>
+    <h6>{{ playerOne }}: {{ scoreX }}</h6>
+    <h6>{{ playerTwo }}: {{ scoreO }}</h6>
+    <h5 *ngIf="winner">Vencedor: {{ winner }}</h5>
+  </label>
+  <p>
+    <button class="waves-effect waves-light btn blue" (click)="empty()">
+      Reiniciar partida
+    </button>
+    <button class="waves-effect waves-light btn blue" (click)="reset()">
+      Novo Jogo
+    </button>
+  </p>
+  <table class="centered">
+    <tbody>
+      <!-- <tr *ngFor="let row of arrayTicTacToe"> -->
+      <tr>
+        <!-- <td
+          *ngFor="let col of arrayTicTacToe"
+          class="line-center line-bottom"
+          (click)="processPlay(row, col)"
+        >
+          {{ board[row][col] }}
+        </td> -->
+        <td class="line-center line-bottom" (click)="processPlay(0, 0)">
+          {{ board[0][0] }}
+        </td>
+        <td class="line-center line-bottom" (click)="processPlay(0, 1)">
+          {{ board[0][1] }}
+        </td>
+        <td class="line-bottom" (click)="processPlay(0, 2)">
+          {{ board[0][2] }}
+        </td>
+      </tr>
+      <tr>
+        <td class="line-center line-bottom" (click)="processPlay(1, 0)">
+          {{ board[1][0] }}
+        </td>
+        <td class="line-center line-bottom" (click)="processPlay(1, 1)">
+          {{ board[1][1] }}
+        </td>
+        <td class="line-bottom" (click)="processPlay(1, 2)">
+          {{ board[1][2] }}
+        </td>
+      </tr>
+      <tr class="white-border-bottom">
+        <td class="line-center" (click)="processPlay(2, 0)">
+          {{ board[2][0] }}
+        </td>
+        <td class="line-center" (click)="processPlay(2, 1)">
+          {{ board[2][1] }}
+        </td>
+        <td (click)="processPlay(2, 2)">{{ board[2][2] }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

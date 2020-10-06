@@ -1,0 +1,53 @@
+body {
+  background: rgb(155, 180, 253);
+}
+
+app-tic-toc-toe table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+app-tic-toc-toe td {
+  width: 2rem;
+  height: 5rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+app-tic-toc-toe .white-border-bottom {
+  border-bottom: 0px;
+}
+
+app-tic-toc-toe .line-bottom {
+  border-bottom: 2px solid darkblue;
+}
+app-tic-toc-toe .line-center {
+  border-right: 2px solid darkblue;
+}
+app-tic-toc-toe button {
+  margin-right: 5px;
+  margin-bottom: 25px;
+}
+
+app-tic-toc-toe .nav-wrapper {
+  background-color: royalblue;
+}
+app-tic-toc-toe .nav-wrapper a {
+  margin-left: 15px;
+}
+
+app-tic-toc-toe label {
+  font-family: Arial, Helvetica, Geneva, Tahoma, sans-serif;
+  color: darkblue;
+  font-weight: bold;
+}
+
+app-tic-toc-toe header {
+  font-family: Arial, Helvetica, Geneva, Tahoma, sans-serif;
+  color: darkblue;
+  font-weight: bold;
+}
+
+app-tic-toc-toe .blue {
+  background-color: royalblue !important;
+}
