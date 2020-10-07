@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: rgb(155, 180, 253);
+}
+
+h5 {
+  text-align: center;
+  color: darkblue;
+}
+.nav-wrapper {
+  background-color: royalblue;
+}
+
+.nav-wrapper a {
+  margin-left: 15px;
+}
+
+label {
+  font-family: Arial, Helvetica, Geneva, Tahoma, sans-serif;
+  color: darkblue;
+  font-weight: bold;
+  margin-right: 2px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.blue {
+  background-color: royalblue !important;
+  margin-right: 2px;
+}
+
+header {
+  font-family: Arial, Helvetica, Geneva, Tahoma, sans-serif;
+  color: darkblue;
+  font-weight: bold;
+}
+
+img {
+  width: 500px;
+  height: 300px;
+  max-width: 500px;
+  max-height: 500px;
+  transition: opacity 0 2000;
+}

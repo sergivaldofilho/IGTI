@@ -1,0 +1,44 @@
+<div class="container">
+  <h5>{{ title }}</h5>
+  <div class="center" *ngIf="!images.length">Nenuhuma imagem</div>
+
+  <div class="center" *ngIf="images.length">
+    <div>
+      <img [src]="images[atualImage]" />
+    </div>
+
+    <label for="" class="bu">
+      <button
+        class="waves-effect waves-light btn blue"
+        [disabled]="firstImage()"
+        (click)="prevAllImages()"
+      >
+        <<
+      </button>
+      <button
+        class="waves-effect waves-light btn blue"
+        [disabled]="firstImage()"
+        (click)="prevImages()"
+      >
+        <
+      </button>
+      <button
+        class="waves-effect waves-light btn blue"
+        [disabled]="lastImage()"
+        (click)="nextImages()"
+      >
+        >
+      </button>
+      <button
+        class="waves-effect waves-light btn blue"
+        [disabled]="lastImage()"
+        (click)="nextAllImages()"
+      >
+        >>
+      </button>
+    </label>
+    <span>Imagem {{ atualImage + 1 }} de {{ images.length }}</span>
+  </div>
+</div>
+
+<ng-content></ng-content>
