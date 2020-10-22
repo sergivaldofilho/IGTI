@@ -1,0 +1,10 @@
+<h2>Training App</h2>
+
+<div class="container">
+  <div class="right">
+    <button *ngIf="!config" (click)="config = true">Configurações</button>
+    <button *ngIf="config" (click)="config = false">Voltar</button>
+  </div>
+  <configtrainning *ngIf="config">Configurações</configtrainning>
+  <timer *ngIf="!config">Conômetro</timer>
+</div>

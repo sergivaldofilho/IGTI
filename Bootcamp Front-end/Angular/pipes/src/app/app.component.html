@@ -1,0 +1,27 @@
+<h3>Pipes</h3>
+
+<p>Texto: {{ text }}</p>
+<!-- Texto com pipe em minúsculo -->
+<p>Texto minúsculo: {{ text | lowercase }}</p>
+<!-- Texto com pipe em maiúsculo -->
+<p>Texto maiúsculo: {{ text | uppercase }}</p>
+
+<p>Número: {{ n }}</p>
+<p>Número formatado: {{ n | number: "5.0-2" }}</p>
+<p>Número formatado BR: {{ n | number: "5.0-2":"pt" }}</p>
+
+<p>Hoje: {{ today }}</p>
+<p>Hoje formatado: {{ today | date: "fullDate" }}</p>
+
+<p>CEP: {{ myZipCode | cep }}</p>
+
+<p>CPF: {{ myCPF | cpf }}</p>
+
+<h3>Impure pipe</h3>
+<input placeholder="Uma string" #ipt /><button (click)="addString(ipt.value)">
+  +
+</button>
+<ul>
+  <li *ngFor="let s of strings">{{ s }}</li>
+</ul>
+<p>Array formatado: {{ strings | joinStrings: ", " }}</p>

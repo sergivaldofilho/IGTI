@@ -1,0 +1,13 @@
+<h3>Aula Roteamento</h3>
+
+<!-- Navegação via link -->
+<ul>
+  <li><a routerLink="/page1" routerLinkActive="active">Page1</a></li>
+  <li><a routerLink="/page2/1" routerLinkActive="active">Page2 (id=1)</a></li>
+  <li><a routerLink="/page2/2" routerLinkActive="active">Page2 (id=2)</a></li>
+</ul>
+
+<!-- Navegação programática -->
+<button (click)="goToPageTwo()">Ir para página 2</button>
+
+<router-outlet></router-outlet>
